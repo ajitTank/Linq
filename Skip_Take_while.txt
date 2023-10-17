@@ -1,0 +1,17 @@
+Skip:
+	number.Skip(2);
+		-- skip the first 2 element
+
+Take:
+	number.Take(2);
+	   --take only 2 element
+		--note If you try to take more element than present it won't give you error
+		
+Skipwhile:
+	number.Skipwhile(i => i>2);
+		-- Skip until you incounter > 2 and then get the output
+
+Takewhile
+	number.Takewhile(i => i>2);
+		-- take the element till the condition satisfy 
+		

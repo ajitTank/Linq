@@ -1,0 +1,33 @@
+word1 = "hellooooo"
+word2 = "help"
+
+Distinct
+		word1.Distinct();
+		--getting the unique lettor
+		
+		
+Intersect
+		word1.Intersect(word2);
+		 --get the Matching  letter from both and Distinct  
+					-- o/p h e l
+					
+					
+Union:
+		word1.Union(word2);
+		 --get the all unique letter and distinct
+		 -- h e l o p
+		 
+
+Except:
+		word1.Except(word2);
+			--get the letter which is present in word1 but not in word2  result is  distinct
+			o/p o
+			
+			
+			
+			
+			
+			1,2,3,4,5
+			1,3,5,7,9
+			
+			

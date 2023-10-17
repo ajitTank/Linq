@@ -1,0 +1,25 @@
+GroupBy:
+	  IEnumberable<IGrouping<string,Person>> 	res =  person.GroupBy(p => p.name)
+			-- here the key is name and IGrouping<string,person> 
+
+	   person.GroupBy(a =>a.age);
+			-- it just group them
+			
+	    person.GroupBy(a => a.age >30);
+		-- it will group them in two subset of IEnumberable<IGrouping<string,Person>> whose age is greater then 30 and less then 30
+			-- where key is true/false 
+		var byAgeName = person.groupBy(a =>a.age, p => p.name);
+		-- it will group them by age but returning IEnumberable<int,string>
+		--key is age
+		
+		
+			
+			foreach(var item in byAgeName){
+			         item.key;
+					 foreach(var name in item){
+						name
+					 }
+			}
+			
+			
+			

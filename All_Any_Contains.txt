@@ -1,0 +1,18 @@
+All:
+	number.All(x => x > 2);
+		-- check the all element is greater than 2 
+			--o/p ture or false
+			
+Any:
+	number.Any(x => x > 2 );
+		-- check the any element is greater than 2 
+			--o/p ture or false
+			
+	number.Any();
+     -- is number collection is empty or not	
+			
+Contains:
+	number.Contains(2);
+	 -- universal way of check the parameter is present or not;
+	 
+	

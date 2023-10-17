@@ -1,0 +1,37 @@
+First:
+		number.First();
+		--give the first element in the collection
+		
+		number.First(x => x>2);
+		--give the first element which is greater than 2
+		
+		if not element found then Exception throw : sequence contains no matching element
+		we can override using the FirstOrDefault
+							if element not found then give you the default value of that perticular collection
+									ex: int = 0; the default value
+										
+Last:
+		number.Last();
+		--give the last element in the collection
+		
+		number.Last(x => x>2);
+		--give the Last element from the right which is greater than 2
+		
+		if not element found then Exception throw : sequence contains no matching element
+		we can override using the LastOrDefault
+							if element not found then give you the default value of that perticular collection
+									ex: int = 0; the default value
+
+Single:
+			number.Single(x => x>2);
+			-- give the element if only condition satisfy for single element  otherwise throw exception : Sequence contains more than one element
+			-- that can be override using the SingleOrDefault();
+			
+ElementAt() : element at position at i 
+				number.ElementAt(1) ---throw exception outOfBound Exception 
+ElementAtOrDefault(5)
+
+
+Concat: 
+		word1.Concat(word2);
+		

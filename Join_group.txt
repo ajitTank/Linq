@@ -1,0 +1,34 @@
+Join 
+	people
+	.Join(records,
+				x => x.Email,
+				y => y.mail
+				(p,r) => new{name = p.name,skypId = r.mail} --- selector
+				);
+				
+				
+				
+				
+				
+						-----sql
+							select p.name,r.mail
+							form people p 
+							join records r
+							on p.emil = r.mail
+							
+Join+group
+	
+	people
+	.GroupJoin(records,
+		x => x.Email,
+		y => y.mail
+		(p,rs)=> new { name = p.Name, skypeId = rs.select(x => r.skypeid).ToArrays()}  --- here the group by name
+		)
+		
+		
+							select p.name,r.skypeId
+							form people p 
+							join records r
+							on p.emil = r.mail
+							group by p.name
+				
